@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ck74jnuvi3rg7"]
+
+[ext_resource type="AudioStream" uid="uid://b2w0ghqab5qo6" path="res://Legacy-Fantasy - High Forest 2.3/music/time_for_adventure.mp3" id="1_j2k36"]
+
+[node name="Music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_j2k36")
+autoplay = true
+bus = &"Music"

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cjb5r7l10g7d4"
+path="res://.godot/imported/power_up.wav-6ce6f899953996a71ab31d9a7672ec39.sample"
+
+[deps]
+
+source_file="res://Legacy-Fantasy - High Forest 2.3/sounds/power_up.wav"
+dest_files=["res://.godot/imported/power_up.wav-6ce6f899953996a71ab31d9a7672ec39.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

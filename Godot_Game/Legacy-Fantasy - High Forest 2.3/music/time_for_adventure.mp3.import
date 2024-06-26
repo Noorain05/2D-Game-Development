@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b2w0ghqab5qo6"
+path="res://.godot/imported/time_for_adventure.mp3-3331b51acc484dfc8a5b3c8a26589adb.mp3str"
+
+[deps]
+
+source_file="res://Legacy-Fantasy - High Forest 2.3/music/time_for_adventure.mp3"
+dest_files=["res://.godot/imported/time_for_adventure.mp3-3331b51acc484dfc8a5b3c8a26589adb.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

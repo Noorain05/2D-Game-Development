@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dqqb0du7b8nyc"
+path="res://.godot/imported/explosion.wav-b8a361a842b6ed643bf7fb2a7ab118b5.sample"
+
+[deps]
+
+source_file="res://Legacy-Fantasy - High Forest 2.3/sounds/explosion.wav"
+dest_files=["res://.godot/imported/explosion.wav-b8a361a842b6ed643bf7fb2a7ab118b5.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

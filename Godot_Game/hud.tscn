@@ -1,0 +1,60 @@
+[gd_scene load_steps=7 format=3 uid="uid://3lxnywch12x8"]
+
+[ext_resource type="Script" path="res://Scripts/hud.gd" id="1_lmn8t"]
+[ext_resource type="FontFile" uid="uid://cxq5ostapmgop" path="res://Legacy-Fantasy - High Forest 2.3/fonts/PixelOperator8.ttf" id="2_4m6ao"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_73qym"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2j4y0"]
+bg_color = Color(0.16155, 0.696268, 0.556861, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xppoj"]
+bg_color = Color(0.165656, 0.165656, 0.165656, 1)
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+shadow_color = Color(0, 0, 0, 0.27451)
+shadow_offset = Vector2(0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ki8br"]
+bg_color = Color(1, 0, 0, 0.623529)
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_lmn8t")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 240.0
+offset_bottom = 140.0
+theme_override_fonts/font = ExtResource("2_4m6ao")
+theme_override_font_sizes/font_size = 0
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+z_index = 1
+offset_left = 777.0
+offset_top = 15.0
+offset_right = 1127.0
+offset_bottom = 35.0
+theme_override_styles/background = SubResource("StyleBoxEmpty_73qym")
+theme_override_styles/fill = SubResource("StyleBoxFlat_2j4y0")
+value = 50.0
+show_percentage = false
+
+[node name="DamageBar" type="ProgressBar" parent="HealthBar"]
+z_index = -1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_xppoj")
+theme_override_styles/fill = SubResource("StyleBoxFlat_ki8br")
+value = 70.0
+show_percentage = false
+
+[node name="Timer" type="Timer" parent="HealthBar"]
+wait_time = 0.2
+one_shot = true
+
+[connection signal="timeout" from="HealthBar/Timer" to="." method="_on_timer_timeout"]

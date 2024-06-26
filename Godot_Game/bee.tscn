@@ -1,0 +1,58 @@
+[gd_scene load_steps=9 format=3 uid="uid://b0ioxh6vlk1up"]
+
+[ext_resource type="Script" path="res://Scripts/bee.gd" id="1_d4sah"]
+[ext_resource type="Texture2D" uid="uid://df7pycwhujf13" path="res://Legacy-Fantasy - High Forest 2.3/Mob/Small Bee/Fly/Fly-Sheet.png" id="1_tu7hv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b0eam"]
+atlas = ExtResource("1_tu7hv")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yoigb"]
+atlas = ExtResource("1_tu7hv")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_whydu"]
+atlas = ExtResource("1_tu7hv")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5luv"]
+atlas = ExtResource("1_tu7hv")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_np7l8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b0eam")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yoigb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_whydu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5luv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_bsoom"]
+radius = 8.06226
+
+[node name="Bee" type="Node2D"]
+script = ExtResource("1_d4sah")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_np7l8")
+autoplay = "default"
+
+[node name="DamageZone" type="Area2D" parent="."]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageZone"]
+shape = SubResource("CircleShape2D_bsoom")
+
+[connection signal="body_entered" from="DamageZone" to="." method="_on_damage_zone_body_entered"]
