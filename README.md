@@ -1,7 +1,7 @@
 # 2D-Game-Development
 
 ## Introduction 👋
-This project consists of making a 2D game with the help of either Unity or Godot game engines. I have choosed Godot to make a platformer with combat system which has decent mechanics, though the one here **DOES** not represent the final project. I will be adding more features to the game as I progress (I have added almost all the things I learned in the tutorials and I will keep adding as I learn). Also I am a huge of the Dark Souls series so please bear with me if the game seams too difficult. 😅
+This project consists of making a 2D game with the help of either Unity or Godot game engines. I have choosed Godot to make a platformer with combat system which has decent mechanics, though the one here **DOES** not represent the final project. I will be adding more features to the game as I progress (I have added almost all the things I learned in the tutorials and I will keep adding as I learn). Also I am a huge of the Dark Souls series so please bear with me if the game seams difficult. 😅
 
 ## Instructions for Installing 🔧
 Just download the .exe file and you are good to go.
