@@ -8,9 +8,9 @@ Just download the .exe file and you are good to go.
 Also I have added the source files for those interested. 😄
 
 ## Controls 🎮
-Move Left : A or ◀️
-Move Right : D or ▶️
-Jump : Spacebar
+- Move Left : A or ◀️
+- Move Right : D or ▶️
+- Jump : Spacebar  
 If the game feels too slow you can try pressing Shift for some fun. 😉
 
 ## Future Improvements 🚀
