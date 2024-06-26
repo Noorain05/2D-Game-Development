@@ -5,7 +5,7 @@ This project consists of making a 2D game with the help of either Unity or Godot
 
 ## Instructions for Installing 🔧
 Just download the .exe file and you are good to go.
-Also I have added the source files for those interested. 😄
+I have also added the source files for those interested. 😄
 
 ## Controls 🎮
 - Move Left : A or ◀️
