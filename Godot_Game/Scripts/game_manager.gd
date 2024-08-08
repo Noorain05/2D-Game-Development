@@ -12,6 +12,8 @@ var max_player_health := 100.0
 var current_player_health := 100.0
 var previous_player_health : float
 var bee_damage := 40.0
+var snail_damage := 30.0
+var boar_damage := 50.0
 var killzone_damage := max_player_health 
 
 
