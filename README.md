@@ -14,7 +14,6 @@ I have also added the source files for those interested. 😄
 If the game feels too slow you can try pressing Shift for some fun. 😉
 
 ## Future Improvements 🚀
-* A Main Menu
 * Capability of attacking mobs
 * 1v1 Boss Battles
 * More Levels (Better than the one here)
